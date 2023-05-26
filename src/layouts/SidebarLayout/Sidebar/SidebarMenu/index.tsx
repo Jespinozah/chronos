@@ -315,7 +315,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/transactions"
+                  to="/management/inventory"
                   startIcon={<Inventory />}
                 >
                   Inventory

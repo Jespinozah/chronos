@@ -35,6 +35,10 @@ const UserManagment = Loader(
   lazy(() => import('src/content/applications/Users/managment'))
 );
 
+const Inventory = Loader(
+  lazy(() => import('src/content/applications/Inventory'))
+);
+
 const UserProfile = Loader(
   lazy(() => import('src/content/applications/Users/profile'))
 );
@@ -154,6 +158,10 @@ const routes: RouteObject[] = [
       {
         path: 'transactions',
         element: <Transactions />
+      },
+      {
+        path: 'inventory',
+        element: <Inventory />
       },
       {
         path: 'users',
