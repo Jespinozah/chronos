@@ -11,10 +11,10 @@ function PageHeader() {
     <Grid container justifyContent="space-between" alignItems="center">
       <Grid item>
         <Typography variant="h3" component="h3" gutterBottom>
-          Transactions
+          User Managment
         </Typography>
         <Typography variant="subtitle2">
-          {user.name}, these are your recent transactions
+          {user.name}, these are your user management panel
         </Typography>
       </Grid>
       <Grid item>
@@ -23,7 +23,7 @@ function PageHeader() {
           variant="contained"
           startIcon={<AddTwoToneIcon fontSize="small" />}
         >
-          Create transaction
+          Create user
         </Button>
       </Grid>
     </Grid>

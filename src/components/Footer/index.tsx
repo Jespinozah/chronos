@@ -16,21 +16,6 @@ function Footer() {
         textAlign={{ xs: 'center', md: 'left' }}
         justifyContent="space-between"
       >
-        <Typography
-          sx={{
-            pt: { xs: 2, md: 0 }
-          }}
-          variant="subtitle1"
-        >
-          Crafted by{' '}
-          <Link
-            href="https://bloomui.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BloomUI.com
-          </Link>
-        </Typography>
       </Box>
     </FooterWrapper>
   );

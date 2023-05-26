@@ -17,7 +17,7 @@ function Feed() {
       name: 'Munroe Dacks',
       jobtitle: 'Senior Accountant',
       company: 'Trudoo',
-      avatar: '/static/images/avatars/1.jpg'
+      avatar: '/static/images/avatars/3.jpg'
     },
     {
       name: 'Gunilla Canario',

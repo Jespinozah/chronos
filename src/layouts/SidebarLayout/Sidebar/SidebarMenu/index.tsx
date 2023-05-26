@@ -7,7 +7,8 @@ import {
   List,
   styled,
   Button,
-  ListItem
+  ListItem,
+  Badge
 } from '@mui/material';
 import { NavLink as RouterLink } from 'react-router-dom';
 import { SidebarContext } from 'src/contexts/SidebarContext';
@@ -31,6 +32,7 @@ import ChromeReaderModeTwoToneIcon from '@mui/icons-material/ChromeReaderModeTwo
 import WorkspacePremiumTwoToneIcon from '@mui/icons-material/WorkspacePremiumTwoTone';
 import CameraFrontTwoToneIcon from '@mui/icons-material/CameraFrontTwoTone';
 import DisplaySettingsTwoToneIcon from '@mui/icons-material/DisplaySettingsTwoTone';
+import { Boy, Inventory, People, ProductionQuantityLimits, RequestQuote, Shop } from '@mui/icons-material';
 
 const MenuWrapper = styled(Box)(
   ({ theme }) => `
@@ -224,18 +226,7 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/dashboards/messenger"
-                  startIcon={<MmsTwoToneIcon />}
-                >
-                  Messenger
-                </Button>
-              </ListItem>
-              <ListItem component="div">
-                <Button
-                  disableRipple
-                  component={RouterLink}
-                  onClick={closeSidebar}
-                  to="/dashboards/messenger"
-                  startIcon={<MmsTwoToneIcon />}
+                  startIcon={<Boy />}
                 >
                   Customers
                 </Button>
@@ -257,7 +248,7 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/dashboards/messenger"
-                  startIcon={<MmsTwoToneIcon />}
+                  startIcon={<ProductionQuantityLimits />}
                 >
                   Products
                 </Button>
@@ -281,7 +272,7 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/management/transactions"
-                  startIcon={<TableChartTwoToneIcon />}
+                  startIcon={<RequestQuote />}
                 >
                   Quotations
                 </Button>
@@ -314,7 +305,7 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/management/transactions"
-                  startIcon={<TableChartTwoToneIcon />}
+                  startIcon={<Shop />}
                 >
                   Purchases
                 </Button>
@@ -325,9 +316,20 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/management/transactions"
-                  startIcon={<TableChartTwoToneIcon />}
+                  startIcon={<Inventory />}
                 >
                   Inventory
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/users"
+                  startIcon={<People />}
+                >
+                  User Managment
                 </Button>
               </ListItem>
             </List>
