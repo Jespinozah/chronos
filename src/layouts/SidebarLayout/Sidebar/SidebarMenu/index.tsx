@@ -214,7 +214,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/dashboards/crypto"
+                  to="/dashboards/general"
                   startIcon={<BrightnessLowTwoToneIcon />}
                 >
                   Dashboard
@@ -225,7 +225,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/dashboards/messenger"
+                  to="/management/customers"
                   startIcon={<Boy />}
                 >
                   Customers
@@ -236,7 +236,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/dashboards/messenger"
+                  to="/management/suppliers"
                   startIcon={<MmsTwoToneIcon />}
                 >
                   Suppliers
@@ -247,7 +247,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/dashboards/messenger"
+                  to="/management/products"
                   startIcon={<ProductionQuantityLimits />}
                 >
                   Products
@@ -271,7 +271,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/transactions"
+                  to="/management/quotations"
                   startIcon={<RequestQuote />}
                 >
                   Quotations
@@ -282,7 +282,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/transactions"
+                  to="/management/orders"
                   startIcon={<TableChartTwoToneIcon />}
                 >
                   Sales Orders
@@ -293,7 +293,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/transactions"
+                  to="/management/fullfillment"
                   startIcon={<TableChartTwoToneIcon />}
                 >
                   Fullfillment
@@ -304,7 +304,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/transactions"
+                  to="/management/purchases"
                   startIcon={<Shop />}
                 >
                   Purchases

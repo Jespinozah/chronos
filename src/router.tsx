@@ -39,6 +39,35 @@ const Inventory = Loader(
   lazy(() => import('src/content/applications/Inventory'))
 );
 
+const Purchases = Loader(
+  lazy(() => import('src/content/applications/Purchases'))
+);
+
+const Fullfillment = Loader(
+  lazy(() => import('src/content/applications/Fullfillment'))
+);
+
+const Orders = Loader(
+  lazy(() => import('src/content/applications/Orders'))
+);
+
+const Quotations = Loader(
+  lazy(() => import('src/content/applications/Quotations'))
+);
+
+const Products = Loader(
+  lazy(() => import('src/content/applications/Products'))
+);
+
+const Suppliers = Loader(
+  lazy(() => import('src/content/applications/Suppliers'))
+);
+
+const Customers = Loader(
+  lazy(() => import('src/content/applications/Customers'))
+);
+
+
 const UserProfile = Loader(
   lazy(() => import('src/content/applications/Users/profile'))
 );
@@ -135,10 +164,10 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '',
-        element: <Navigate to="crypto" replace />
+        element: <Navigate to="general" replace />
       },
       {
-        path: 'crypto',
+        path: 'general',
         element: <Crypto />
       },
       {
@@ -158,6 +187,34 @@ const routes: RouteObject[] = [
       {
         path: 'transactions',
         element: <Transactions />
+      },
+      {
+        path: 'customers',
+        element: <Customers />
+      },
+      {
+        path: 'suppliers',
+        element: <Suppliers />
+      },
+      {
+        path: 'products',
+        element: <Products />
+      },
+      {
+        path: 'quotations',
+        element: <Quotations />
+      },
+      {
+        path: 'orders',
+        element: <Orders />
+      },
+      {
+        path: 'fullfillment',
+        element: <Fullfillment />
+      },
+      {
+        path: 'purchases',
+        element: <Purchases />
       },
       {
         path: 'inventory',
