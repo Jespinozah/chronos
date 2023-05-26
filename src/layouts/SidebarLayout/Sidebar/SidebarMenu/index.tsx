@@ -215,7 +215,7 @@ function SidebarMenu() {
                   to="/dashboards/crypto"
                   startIcon={<BrightnessLowTwoToneIcon />}
                 >
-                  Cryptocurrency
+                  Dashboard
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -229,6 +229,39 @@ function SidebarMenu() {
                   Messenger
                 </Button>
               </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/dashboards/messenger"
+                  startIcon={<MmsTwoToneIcon />}
+                >
+                  Customers
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/dashboards/messenger"
+                  startIcon={<MmsTwoToneIcon />}
+                >
+                  Suppliers
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/dashboards/messenger"
+                  startIcon={<MmsTwoToneIcon />}
+                >
+                  Products
+                </Button>
+              </ListItem>
             </List>
           </SubMenuWrapper>
         </List>
@@ -236,7 +269,7 @@ function SidebarMenu() {
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
-              Management
+              Operations
             </ListSubheader>
           }
         >
@@ -250,7 +283,51 @@ function SidebarMenu() {
                   to="/management/transactions"
                   startIcon={<TableChartTwoToneIcon />}
                 >
-                  Transactions List
+                  Quotations
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/transactions"
+                  startIcon={<TableChartTwoToneIcon />}
+                >
+                  Sales Orders
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/transactions"
+                  startIcon={<TableChartTwoToneIcon />}
+                >
+                  Fullfillment
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/transactions"
+                  startIcon={<TableChartTwoToneIcon />}
+                >
+                  Purchases
+                </Button>
+              </ListItem>
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/transactions"
+                  startIcon={<TableChartTwoToneIcon />}
+                >
+                  Inventory
                 </Button>
               </ListItem>
             </List>
