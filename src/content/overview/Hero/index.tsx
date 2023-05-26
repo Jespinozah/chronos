@@ -82,7 +82,7 @@ function Hero() {
         <Grid item md={10} lg={8} mx="auto">
           <Button
             component={RouterLink}
-            to="/dashboards/crypto"
+            to="/dashboards/general"
             size="large"
             variant="contained"
           >
